@@ -1,4 +1,5 @@
 import React from "react"
+import { OptForm } from '../components'
 import { FaqsContainer } from "../containers/faqs"
 import { JumbotronContainer } from "../containers/jumbotron"
 import { FooterContainer } from "../containers/footer"
@@ -11,7 +12,6 @@ export default function Home() {
                 <OptForm>
                     <OptForm.Input placeholder="Email Address" />
                     <OptForm.Button>Try it now</OptForm.Button>
-                    <OptForm.Break />
                     <OptForm.Text>Ready to watch? Enter your email to create or restart
                     your membership.</OptForm.Text>
                 </OptForm>

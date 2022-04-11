@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Input, Button, Text } from './styles/opt-form'
 
-import ChevronRight from "/Users/friedrichartur/Development/frontEnd/scrimbaThings/netflix-clone/src/images/icons/chevron-right.png"
+import ChevronRight from "../../images/icons/chevron-right.png"
 
 export default function OptForm({ children, ...restProps }) {
     return <Container {...restProps}>{children}</Container>;

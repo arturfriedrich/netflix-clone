@@ -2,7 +2,7 @@ import React from 'react'
 import { Header } from '../components'
 import * as ROUTES from '../constants/routes'
 
-import NetflixLogo from "/Users/friedrichartur/Development/frontEnd/scrimbaThings/netflix-clone/src/images/misc/logo.svg"
+import NetflixLogo from "../images/misc/logo.svg"
 
 export function HeaderContainer({ children }) {
     return (

@@ -12,6 +12,7 @@ export function BrowseContainer() {
     const [category, setCategory] = useState('series')
     const [profile, setProfile] = useState({})
     const [loading, setLoading] = useState(true)
+    const [searchTerm, setSearchTerm] = useState('')
 
     const { firebase } = useContext(FirebaseContext)
     
@@ -36,6 +37,9 @@ export function BrowseContainer() {
                             onClick={() => setCategory('films')}>
                             Films
                         </Header.Link>
+                    </Header.Group>
+                    <Header.Group>
+                        <Header.Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
                     </Header.Group>
                 </Header.Frame>
 

@@ -2,7 +2,6 @@ import React from "react"
 import { Container, Title, List, Item, Picture, Name } from "./styles/profiles"
 
 import LoadingGif from "../../images/misc/loading.gif"
-import User from "../../images/users/1.png"
 
 export default function Profiles({ children, ...restProps }) {
     return <Container {...restProps}>{children}</Container>
@@ -21,7 +20,7 @@ Profiles.User = function ProfilesUser({ children, ...restProps }) {
 }
 
 Profiles.Picture = function ProfilesPicture({ src, ...restProps }) {
-    return <Picture {...restProps} src={src ? User :
+    return <Picture {...restProps} src={src ? require(`../../images/users/${src}.png`) :
     LoadingGif} />
 }
 

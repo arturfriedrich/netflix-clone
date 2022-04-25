@@ -1,5 +1,5 @@
 import React, { useState, useContext, createContext } from "react"
-import { Container, Group, Title, SubTitle, Text, Feature, FeatureTitle, FeatureClose, Maturity, Context, Meta, Entities, Item, Image } from './styles/card';
+import { Container, Group, Title, SubTitle, Text, Feature, FeatureTitle, FeatureClose, Maturity, Context, Meta, Entities, Item, Image, Content, FeatureText } from './styles/card';
 
 import CloseIcon from "../../images/icons/close.png"
 
@@ -64,7 +64,7 @@ Card.Feature = function CardFeature({ children, category, ...restProps }) {
     const { showFeature, itemFeature, setShowFeature } = useContext(FeatureContext)
     
     return showFeature ? (
-        <Feature src={`../../images/${category}/${itemFeature.genre}/${itemFeature.slug}/large.jpg`}>
+        <Feature src={require(`../../images/${category}/${itemFeature.genre}/${itemFeature.slug}/large.jpg`)}>
             <Content>
                 <FeatureTitle>{itemFeature.title}</FeatureTitle>
                 <FeatureText>{itemFeature.description}</FeatureText>

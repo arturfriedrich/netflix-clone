@@ -3,7 +3,6 @@ import { Link as ReachRouterLink } from 'react-router-dom'
 import { Group, Background, Link, Text, Container, Logo, ButtonLink, Feature, FeatureCallOut, PlayButton, SearchIcon, SearchInput, Search, Profile, Picture, Dropdown } from './styles/header'
 
 import Searchicon from "../../images/icons/search.png"
-import UserPicture from "../../images/users/1.png"
 
 export default function Header({ bg = true, children, ...restProps }) {
     return bg ? <Background {...restProps}>{children}</Background> : children
@@ -76,7 +75,7 @@ Header.Profile = function HeaderProfile({ children, ...restProps }) {
 }
 
 Header.Picture = function HeaderPicture({ src, ...restProps }) {
-    return <Picture {...restProps} src={UserPicture} />
+    return <Picture {...restProps} src={require(`../../images/users/${src}.png`)} />
 }
 
 Header.Dropdown = function HeaderDRopdown({ children, ...restProps }) {

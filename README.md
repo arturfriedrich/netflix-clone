@@ -4,10 +4,6 @@
 
 ## Overview
 
-### Website to the current version
-
-[Website](https://arturfriedrich.github.io/signin)
-
 ## My process
 
 ### Built with

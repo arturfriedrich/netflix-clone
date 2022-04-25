@@ -6,7 +6,7 @@
 
 ### Website to the current version
 
-[Website](https://arturfriedrich.github.io/)
+[Website](https://arturfriedrich.github.io/signin)
 
 ## My process
 

@@ -1,6 +1,6 @@
-import styled from 'styled-components';
+import styled from "styled-components"
 
-export const Container = styled.div``;
+export const Container = styled.div``
 
 export const Overlay = styled.div`
     display: flex;
@@ -13,7 +13,7 @@ export const Overlay = styled.div`
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
     margin: 0 20px;
-`;
+`
 
 export const Inner = styled.div`
     position: relative;
@@ -25,7 +25,7 @@ export const Inner = styled.div`
         height: 100%;
         width: 100%;
     }
-`;
+`
 
 export const Close = styled.button`
     position: absolute;
@@ -56,7 +56,7 @@ export const Close = styled.button`
     &:after {
         transform: rotate(-45deg);
     }
-`;
+`
 
 export const Button = styled.button`
     background-color: #e50914;
@@ -78,4 +78,4 @@ export const Button = styled.button`
         transform: scale(1.05);
         background-color: #ff0a16;
     }
-`;
+`

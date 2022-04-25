@@ -6,7 +6,7 @@
 
 ### Website to the current version
 
-[Website](arturfriedrich.github.io/netflix-clone/)
+[Website](https://arturfriedrich.github.io/)
 
 ## My process
 
